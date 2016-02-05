@@ -1,0 +1,11 @@
+current_time_string = input("What time is it right now? (in hours) " )
+alarm_time_string = input("What time do you want to wake up?")
+
+current_time_int = int(current_time_string)
+alarm_time_int = int(alarm_time_string)
+
+hours = current_time_int + alarm_time_int
+
+wakeup_time = hours % 24
+
+print(wakeup_time) 
